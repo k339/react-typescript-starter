@@ -27,8 +27,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "prettier --write . && npm run test && git add -A .",
-      "pre-push": "npm run lint && npm test"
+      "pre-commit": "lint-staged"
     }
   },
   "eslintConfig": {
@@ -62,6 +61,11 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md}": "prettier --write",
+    "*.{js,jsx,ts,tsx,md,html}": [
+      "eslint --fix",
+      "prettier --write .",
+      "yarn test --watchAll=false"
+    ]
   }
 }
