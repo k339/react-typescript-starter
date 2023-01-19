@@ -5,4 +5,3 @@
   "editor.formatOnSave": true, // Prettier auto format on save
   "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
-  
