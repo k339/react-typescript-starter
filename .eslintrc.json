@@ -23,7 +23,6 @@
     "react/jsx-filename-extension": [
       "error",
       { "extensions": [".jsx", ".tsx"] }
-    ],
-    "semi": [2, "never"]
+    ]
   }
 }
