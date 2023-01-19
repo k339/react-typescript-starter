@@ -24,6 +24,6 @@
       "error",
       { "extensions": [".jsx", ".tsx"] }
     ],
-    "semi": "naver"
+    "semi": [2, "never"]
   }
 }
